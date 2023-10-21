@@ -31,7 +31,7 @@
                     </div>
                 </form>
                 <div class="row justify-content-center">
-                    <a href="formCadastro.php">cadastre-se</a>
+                    <a href="formCadastro.php" style="padding: 10px;">cadastre-se</a>
                 </div>
             </div>
         </div>

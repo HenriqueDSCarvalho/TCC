@@ -12,7 +12,6 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 </head>
-
 <body>
     <?php include('cadastro.php') ?>
     <div class="row justify-content-center">

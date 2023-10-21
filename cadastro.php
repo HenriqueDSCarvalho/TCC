@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Variaveis Formulario
     $login = $_POST['login'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = md5($_POST['senha']);
     $permissao = $_POST['permissao'];
 
     //Evitar injeção de SQL

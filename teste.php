@@ -6,25 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
 
 <body>
-    <?php include 'autenticar.php'?>
+    <?php include 'autenticar.php' ?>
     <?php
-// dashboard.php
+    // dashboard.php
 
-// Verificar se a variável de sessão está definida
-if(isset($_SESSION['logado'])) {
-    $logado = $_SESSION['logado'];
-} else {
-    $logado = 'Convidado';  // ou qualquer outro valor padrão
-}
-?>
-   
+    // Verificar se a variável de sessão está definida
+    if (isset($_SESSION['logado'])) {
+        $logado = $_SESSION['logado'];
+    } else {
+        $logado = 'Convidado';  // ou qualquer outro valor padrão
+    }
+    ?>
     <div class="wrapper">
         <!-- Sidebar -->
         <aside id="sidebar">
@@ -44,26 +42,13 @@ if(isset($_SESSION['logado'])) {
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
-                            aria-expanded="false" aria-controls="pages">
-                            <i class="fa-regular fa-file-lines pe-2"></i>
+                        <a href="./produto/index.php" class="sidebar-link">
+                            <i class="fa-regular fa-file pe-2"></i>
                             Estoque
                         </a>
-                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="formCadastroProd.php" class="sidebar-link">Cadastrar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Excluir</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
-                            aria-expanded="false" aria-controls="dashboard">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
                             <i class="fa-solid fa-sliders pe-2"></i>
                             Relatorios
                         </a>
@@ -77,8 +62,7 @@ if(isset($_SESSION['logado'])) {
                         </ul>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
-                            aria-expanded="false" aria-controls="auth">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
                             <i class="fa-regular fa-user pe-2"></i>
                             Usuários
                         </a>
@@ -98,15 +82,13 @@ if(isset($_SESSION['logado'])) {
                         Multi Level Nav
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
-                            aria-expanded="false" aria-controls="multi">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
                             <i class="fa-solid fa-share-nodes pe-2"></i>
                             Multi Level
                         </a>
                         <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
                                     Two Links
                                 </a>
                                 <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
@@ -134,7 +116,7 @@ if(isset($_SESSION['logado'])) {
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h3>Bem-vindo, <?php echo $logado?>!</h3>
+                        <h3>Bem-vindo, <?php echo $logado ?>!</h3>
                         <a href="logout.php" class="btn btn-danger" style="position:absolute; right: 1%; top: 1% ; ">sair</a>
 
                     </div>
@@ -142,10 +124,9 @@ if(isset($_SESSION['logado'])) {
             </main>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
