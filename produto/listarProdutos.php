@@ -1,5 +1,3 @@
-<h1>produtos</h1>
-
 <?php
 $sql = "SELECT * FROM produtos";
 

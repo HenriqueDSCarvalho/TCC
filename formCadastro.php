@@ -12,34 +12,31 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 </head>
+
 <body>
     <?php include('cadastro.php') ?>
     <div class="row justify-content-center">
         <h1>Cadastro de Usuarios</h1>
     </div>
-
-
-
-
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <form action="formCadastro.php" method="post">
                     <div class="form-group">
                         <label for="login">login:</label>
-                        <input type="text" class="form-control" name="login" required>
+                        <input type="text" class="form-control" id="login" name="login" required>
                     </div>
                     <div class="form-group">
                         <label for="login">email:</label>
-                        <input type="text" class="form-control" name="email" required>
+                        <input type="text" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha:</label>
-                        <input type="password" class="form-control" name="senha" required>
+                        <input type="password" class="form-control" id="password" name="senha" required>
                     </div>
                     <div class="form-group">
                         <label for="login">permissao:</label>
-                        <input type="text" class="form-control" name="permissao" required>
+                        <input type="text" class="form-control" id="permissao" name="permissao" required>
                     </div>
                     <div class="row justify-content-center">
                         <button class="btn btn-success" type="submit">cadastrar</button>
